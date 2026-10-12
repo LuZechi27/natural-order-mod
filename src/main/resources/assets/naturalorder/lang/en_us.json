@@ -1,0 +1,13 @@
+{
+  "itemGroup.naturalorder": "Example Mod Tab",
+  "block.naturalorder.example_block": "Example Block",
+  "item.naturalorder.example_item": "Example Item",
+
+  "naturalorder.configuration.title": "Natural Order Configs",
+  "naturalorder.configuration.section.naturalorder.common.toml": "Natural Order Configs",
+  "naturalorder.configuration.section.naturalorder.common.toml.title": "Natural Order Configs",
+  "naturalorder.configuration.items": "Item List",
+  "naturalorder.configuration.logDirtBlock": "Log Dirt Block",
+  "naturalorder.configuration.magicNumberIntroduction": "Magic Number Text",
+  "naturalorder.configuration.magicNumber": "Magic Number"
+}
