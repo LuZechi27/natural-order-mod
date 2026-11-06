@@ -1,13 +1,14 @@
 {
-  "itemGroup.naturalorder": "Example Mod Tab",
-  "block.naturalorder.example_block": "Example Block",
-  "item.naturalorder.example_item": "Example Item",
+  "item.naturalorder.onion": "Onion",
+  "item.naturalorder.onion_sets": "Onion Sets",
+  "item.naturalorder.red_onion": "Red Onion",
+  "item.naturalorder.red_onion_sets": "Red Onion Sets",
+  "item.naturalorder.white_onion": "White Onion",
+  "item.naturalorder.white_onion_sets": "White Onion Sets",
 
-  "naturalorder.configuration.title": "Natural Order Configs",
-  "naturalorder.configuration.section.naturalorder.common.toml": "Natural Order Configs",
-  "naturalorder.configuration.section.naturalorder.common.toml.title": "Natural Order Configs",
-  "naturalorder.configuration.items": "Item List",
-  "naturalorder.configuration.logDirtBlock": "Log Dirt Block",
-  "naturalorder.configuration.magicNumberIntroduction": "Magic Number Text",
-  "naturalorder.configuration.magicNumber": "Magic Number"
+  "block.naturalorder.onion_crop": "Onion Crop",
+  "block.naturalorder.red_onion_crop": "Red Onion Crop",
+  "block.naturalorder.white_onion_crop": "White Onion Crop",
+
+  "creativetab.naturalorder.all_natural_order_items": "All Natural Order Items"
 }
