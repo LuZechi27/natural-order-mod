@@ -22,8 +22,14 @@ public class ModItems {
             properties -> new Item(properties.food(ModFoods.ONION)));
 
     //Crop seeds
-    public static final DeferredItem<Item> ONION_SEEDS = ITEMS.registerItem("onion_seeds",
+    public static final DeferredItem<Item> ONION_SETS = ITEMS.registerItem("onion_sets",
             properties -> new BlockItem(ModBlocks.ONION_CROP.get() ,properties));
+
+    public static final DeferredItem<Item> RED_ONION_SETS = ITEMS.registerItem("red_onion_sets",
+            properties -> new BlockItem(ModBlocks.RED_ONION_CROP.get() ,properties));
+
+    public static final DeferredItem<Item> WHITE_ONION_SETS = ITEMS.registerItem("white_onion_sets",
+            properties -> new BlockItem(ModBlocks.WHITE_ONION_CROP.get() ,properties));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

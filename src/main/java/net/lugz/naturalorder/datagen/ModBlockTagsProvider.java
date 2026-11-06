@@ -19,6 +19,8 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.@NonNull Provider provider) {
         tag(BlockTags.CROPS)
-                .add(ModBlocks.ONION_CROP.get());
+                .add(ModBlocks.ONION_CROP.get())
+                .add(ModBlocks.RED_ONION_CROP.get())
+                .add(ModBlocks.WHITE_ONION_CROP.get());
     }
 }

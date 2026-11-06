@@ -1,4 +1,4 @@
-package net.lugz.naturalorder.block.custom;
+package net.lugz.naturalorder.block.custom.onions;
 
 import net.lugz.naturalorder.item.ModItems;
 import net.minecraft.core.BlockPos;
@@ -15,8 +15,8 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jspecify.annotations.NonNull;
 
 public class OnionCropBlock extends CropBlock {
-    public static final int MAX_AGE = 7;
-    public static final IntegerProperty AGE = BlockStateProperties.AGE_7;
+    public static final int MAX_AGE = 3;
+    public static final IntegerProperty AGE = BlockStateProperties.AGE_3;
     public static final VoxelShape[] SHAPES = Block.boxes(7, (age) -> Block.column((double)16.0F, (double)0.0F, (double)(2 + age)));
 
     public OnionCropBlock( Properties properties) {
@@ -25,7 +25,7 @@ public class OnionCropBlock extends CropBlock {
 
     @Override
     protected @NonNull ItemLike getBaseSeedId() {
-        return ModItems.ONION_SEEDS.get();
+        return ModItems.ONION_SETS.get();
     }
 
     @Override

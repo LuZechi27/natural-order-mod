@@ -1,10 +1,13 @@
 package net.lugz.naturalorder.block;
 
 import net.lugz.naturalorder.NaturalOrder;
-import net.lugz.naturalorder.block.custom.OnionCropBlock;
+import net.lugz.naturalorder.block.custom.onions.OnionCropBlock;
+import net.lugz.naturalorder.block.custom.onions.RedOnionCropBlock;
+import net.lugz.naturalorder.block.custom.onions.WhiteOnionCropBlock;
 import net.lugz.naturalorder.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
@@ -18,7 +21,27 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> ONION_CROP = BLOCKS.registerBlock("onion_crop",
             properties -> new OnionCropBlock(
-                    properties.randomTicks().instabreak().noCollision().pushReaction(PushReaction.DESTROY)));
+                    properties.randomTicks()
+                            .instabreak()
+                            .noCollision()
+                            .pushReaction(PushReaction.DESTROY)
+                            .sound(SoundType.CROP)));
+
+    public static final DeferredBlock<Block> RED_ONION_CROP = BLOCKS.registerBlock("red_onion_crop",
+            properties -> new RedOnionCropBlock(
+                    properties.randomTicks()
+                            .instabreak()
+                            .noCollision()
+                            .pushReaction(PushReaction.DESTROY)
+                            .sound(SoundType.CROP)));
+
+    public static final DeferredBlock<Block> WHITE_ONION_CROP = BLOCKS.registerBlock("white_onion_crop",
+            properties -> new WhiteOnionCropBlock(
+                    properties.randomTicks()
+                            .instabreak()
+                            .noCollision()
+                            .pushReaction(PushReaction.DESTROY)
+                            .sound(SoundType.CROP)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function) {
         DeferredBlock<T> block = BLOCKS.registerBlock(name, function);

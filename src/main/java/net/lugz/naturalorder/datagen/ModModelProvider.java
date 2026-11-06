@@ -2,7 +2,9 @@ package net.lugz.naturalorder.datagen;
 
 import net.lugz.naturalorder.NaturalOrder;
 import net.lugz.naturalorder.block.ModBlocks;
-import net.lugz.naturalorder.block.custom.OnionCropBlock;
+import net.lugz.naturalorder.block.custom.onions.OnionCropBlock;
+import net.lugz.naturalorder.block.custom.onions.RedOnionCropBlock;
+import net.lugz.naturalorder.block.custom.onions.WhiteOnionCropBlock;
 import net.lugz.naturalorder.item.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
@@ -23,5 +25,7 @@ public class ModModelProvider extends ModelProvider {
 
         //BLOCKS
         blockModels.createCropBlock(ModBlocks.ONION_CROP.get(), OnionCropBlock.AGE, 0, 1, 2, 3);
+        blockModels.createCropBlock(ModBlocks.RED_ONION_CROP.get(), RedOnionCropBlock.AGE, 0, 1, 2, 3);
+        blockModels.createCropBlock(ModBlocks.WHITE_ONION_CROP.get(), WhiteOnionCropBlock.AGE, 0, 1, 2, 3);
     }
 }

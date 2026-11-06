@@ -25,7 +25,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RED_ONION);
                         output.accept(ModItems.WHITE_ONION);
 
-                        output.accept(ModItems.ONION_SEEDS);
+                        output.accept(ModItems.ONION_SETS);
+                        output.accept(ModItems.RED_ONION_SETS);
+                        output.accept(ModItems.WHITE_ONION_SETS);
                     }).build()
     );
 

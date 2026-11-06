@@ -1,7 +1,9 @@
 package net.lugz.naturalorder.datagen;
 
 import net.lugz.naturalorder.block.ModBlocks;
-import net.lugz.naturalorder.block.custom.OnionCropBlock;
+import net.lugz.naturalorder.block.custom.onions.OnionCropBlock;
+import net.lugz.naturalorder.block.custom.onions.RedOnionCropBlock;
+import net.lugz.naturalorder.block.custom.onions.WhiteOnionCropBlock;
 import net.lugz.naturalorder.item.ModItems;
 import net.minecraft.advancements.criterion.StatePropertiesPredicate;
 import net.minecraft.core.Holder;
@@ -23,7 +25,27 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        addCropDrops(ModBlocks.ONION_CROP.get(), ModItems.ONION.get(), ModItems.ONION_SEEDS.get(), OnionCropBlock.AGE, OnionCropBlock.MAX_AGE);
+        addCropDrops(
+                ModBlocks.ONION_CROP.get(),
+                ModItems.ONION.get(),
+                ModItems.ONION_SETS.get(),
+                OnionCropBlock.AGE,
+                OnionCropBlock.MAX_AGE
+        );
+        addCropDrops(
+                ModBlocks.RED_ONION_CROP.get(),
+                ModItems.RED_ONION.get(),
+                ModItems.RED_ONION_SETS.get(),
+                RedOnionCropBlock.AGE,
+                RedOnionCropBlock.MAX_AGE
+        );
+        addCropDrops(
+                ModBlocks.WHITE_ONION_CROP.get(),
+                ModItems.WHITE_ONION.get(),
+                ModItems.WHITE_ONION_SETS.get(),
+                WhiteOnionCropBlock.AGE,
+                WhiteOnionCropBlock.MAX_AGE
+        );
     }
 
     @Override
